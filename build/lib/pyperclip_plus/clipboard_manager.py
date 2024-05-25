@@ -1,4 +1,3 @@
-# pyperclip_plus/clipboard_manager.py
 import pyperclip
 import time
 
@@ -42,6 +41,7 @@ class ClipboardManager:
 if __name__ == "__main__":
     manager = ClipboardManager()
     manager.switch_to_main()
-    manager.copy("Hello, World!")
-    print(manager.paste())
-    manager.search_history("World")
+    manager.copy("Hello, World!")  # Correctly calling the copy method with the 'text' parameter
+    print(manager.paste())  # Outputs: Hello, World!
+    manager.search_history("World")  # Searches the history for the keyword "World"
+

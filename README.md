@@ -1,23 +1,3 @@
-Metadata-Version: 2.1
-Name: pyperclip-plus
-Version: 0.1.8
-Summary: An enhanced clipboard management tool
-Home-page: https://github.com/yourusername/pyperclip_plus
-Author: Your Name
-Author-email: your.email@example.com
-License: UNKNOWN
-Platform: UNKNOWN
-Classifier: Development Status :: 3 - Alpha
-Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Description-Content-Type: text/markdown
-
 以下は、`pyperclip_plus` パッケージの README を日本語で書いたものです：
 
 ---
@@ -75,5 +55,3 @@ for item in history_items:
 
 - 名前: Your Name
 - メール: your.email@example.com
-
-
