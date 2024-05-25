@@ -5,7 +5,7 @@ here = pathlib.Path(__file__).parent
 long_description = (here / "README.md").read_text(encoding="utf-8")
 setup(
     name='pyperclip_plus',
-    version='0.1.8',
+    version='0.1.9',
     packages=find_packages(),
     description='An enhanced clipboard management tool',
     author='Your Name',

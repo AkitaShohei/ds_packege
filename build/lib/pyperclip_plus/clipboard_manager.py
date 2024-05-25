@@ -4,7 +4,7 @@ import time
 class ClipboardManager:
     def __init__(self):
         self.history = []
-        self.current_clipboard = None
+        self.current_clipboard = "main"
 
     def copy(self, text):
         if self.current_clipboard == "main":
@@ -36,12 +36,17 @@ class ClipboardManager:
 
     def schedule_paste(self, delay):
         time.sleep(delay)
-        self.paste()
+        return self.paste()
 
 if __name__ == "__main__":
     manager = ClipboardManager()
     manager.switch_to_main()
-    manager.copy("Hello, World!")  # Correctly calling the copy method with the 'text' parameter
-    print(manager.paste())  # Outputs: Hello, World!
-    manager.search_history("World")  # Searches the history for the keyword "World"
+    manager.copy("Hello, World!")  # プログラムでのコピー
+    print(manager.paste())  # 出力: Hello, World!
+
+    # 手動でテキストをコピー (command+c) を行い、以下で貼り付ける
+    time.sleep(10)  # 手動コピーの時間を確保
+    manual_copied_text = pyperclip.paste()
+    print(manual_copied_text)  # 出力: Manual copy text (手動でコピーしたテキストが表示されます)
+
 
